@@ -2,6 +2,32 @@
 Changelog for package pid_controller
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+2.50.2 (2025-10-17)
+-------------------
+
+2.50.1 (2025-10-02)
+-------------------
+
+2.50.0 (2025-09-12)
+-------------------
+
+2.49.1 (2025-07-31)
+-------------------
+
+2.49.0 (2025-07-21)
+-------------------
+
+2.48.0 (2025-07-02)
+-------------------
+
+2.47.0 (2025-06-07)
+-------------------
+
+2.46.0 (2025-05-17)
+-------------------
+* Simplify `on_set_chained_mode` avoiding cpplint warnings (backport `#1564 <https://github.com/ros-controls/ros2_controllers/issues/1564>`_) (`#1687 <https://github.com/ros-controls/ros2_controllers/issues/1687>`_)
+* Contributors: mergify[bot], Bhagyesh Agresar
+
 2.45.0 (2025-04-27)
 -------------------
 

@@ -167,13 +167,14 @@ controller_interface::CallbackReturn MecanumDriveController::on_configure(
   rt_odom_state_publisher_->msg_.child_frame_id = params_.base_frame_id;
   rt_odom_state_publisher_->msg_.pose.pose.position.z = 0;
 
-  auto & covariance = rt_odom_state_publisher_->msg_.twist.covariance;
+  auto & pose_covariance = rt_odom_state_publisher_->msg_.pose.covariance;
+  auto & twist_covariance = rt_odom_state_publisher_->msg_.twist.covariance;
   constexpr size_t NUM_DIMENSIONS = 6;
   for (size_t index = 0; index < 6; ++index)
   {
     const size_t diagonal_index = NUM_DIMENSIONS * index + index;
-    covariance[diagonal_index] = params_.pose_covariance_diagonal[index];
-    covariance[diagonal_index] = params_.twist_covariance_diagonal[index];
+    pose_covariance[diagonal_index] = params_.pose_covariance_diagonal[index];
+    twist_covariance[diagonal_index] = params_.twist_covariance_diagonal[index];
   }
   rt_odom_state_publisher_->unlock();
 
@@ -321,11 +322,7 @@ MecanumDriveController::on_export_reference_interfaces()
   return reference_interfaces;
 }
 
-bool MecanumDriveController::on_set_chained_mode(bool chained_mode)
-{
-  // Always accept switch to/from chained mode
-  return true || chained_mode;
-}
+bool MecanumDriveController::on_set_chained_mode(bool /*chained_mode*/) { return true; }
 
 controller_interface::CallbackReturn MecanumDriveController::on_activate(
   const rclcpp_lifecycle::State & /*previous_state*/)

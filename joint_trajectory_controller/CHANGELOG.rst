@@ -2,6 +2,46 @@
 Changelog for package joint_trajectory_controller
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+2.50.2 (2025-10-17)
+-------------------
+* Fix JTC crashing when shutdown while executing (backport `#1960 <https://github.com/ros-controls/ros2_controllers/issues/1960>`_) (`#1961 <https://github.com/ros-controls/ros2_controllers/issues/1961>`_)
+* Contributors: mergify[bot]
+
+2.50.1 (2025-10-02)
+-------------------
+* Remove wrong and unnecessary docstrings (backport `#1912 <https://github.com/ros-controls/ros2_controllers/issues/1912>`_) (`#1923 <https://github.com/ros-controls/ros2_controllers/issues/1923>`_)
+* Use auto dependency management for windows workflow (backport `#1917 <https://github.com/ros-controls/ros2_controllers/issues/1917>`_) (`#1921 <https://github.com/ros-controls/ros2_controllers/issues/1921>`_)
+* Contributors: mergify[bot]
+
+2.50.0 (2025-09-12)
+-------------------
+* Preallocate `std::vector` variables for interfaces (backport `#1893 <https://github.com/ros-controls/ros2_controllers/issues/1893>`_) (`#1898 <https://github.com/ros-controls/ros2_controllers/issues/1898>`_)
+* Reset JTC PID's to zero on_activate() (backport `#1840 <https://github.com/ros-controls/ros2_controllers/issues/1840>`_) (`#1843 <https://github.com/ros-controls/ros2_controllers/issues/1843>`_)
+* Contributors: mergify[bot]
+
+2.49.1 (2025-07-31)
+-------------------
+
+2.49.0 (2025-07-21)
+-------------------
+* Fix format (`#1821 <https://github.com/ros-controls/ros2_controllers/issues/1821>`_)
+* [JTC] added time_from_start to action feedback (`#1755 <https://github.com/ros-controls/ros2_controllers/issues/1755>`_)
+* Contributors: Bence Magyar, Michael Wrock
+
+2.48.0 (2025-07-02)
+-------------------
+* Fix atomic variables in JTC (backport `#1749 <https://github.com/ros-controls/ros2_controllers/issues/1749>`_) (`#1765 <https://github.com/ros-controls/ros2_controllers/issues/1765>`_)
+* Contributors: mergify[bot]
+
+2.47.0 (2025-06-07)
+-------------------
+* JTC: Use std::atomic<bool> (backport `#1720 <https://github.com/ros-controls/ros2_controllers/issues/1720>`_) (`#1722 <https://github.com/ros-controls/ros2_controllers/issues/1722>`_)
+* Reset both sec and nanosec in time_from_start (backport `#1709 <https://github.com/ros-controls/ros2_controllers/issues/1709>`_) (`#1710 <https://github.com/ros-controls/ros2_controllers/issues/1710>`_)
+* Contributors: mergify[bot]
+
+2.46.0 (2025-05-17)
+-------------------
+
 2.45.0 (2025-04-27)
 -------------------
 

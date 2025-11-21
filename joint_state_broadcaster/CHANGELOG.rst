@@ -2,6 +2,34 @@
 Changelog for package joint_state_broadcaster
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+2.50.2 (2025-10-17)
+-------------------
+
+2.50.1 (2025-10-02)
+-------------------
+
+2.50.0 (2025-09-12)
+-------------------
+* docs(joint_state_broadcaster): clarify /dynamic_joint_states contents (backport `#1865 <https://github.com/ros-controls/ros2_controllers/issues/1865>`_) (`#1870 <https://github.com/ros-controls/ros2_controllers/issues/1870>`_)
+* Contributors: mergify[bot]
+
+2.49.1 (2025-07-31)
+-------------------
+
+2.49.0 (2025-07-21)
+-------------------
+
+2.48.0 (2025-07-02)
+-------------------
+* [Humble] [JSB] Add frame_id to the joint states message (`#1751 <https://github.com/ros-controls/ros2_controllers/issues/1751>`_)
+* Contributors: Sai Kishor Kothakota
+
+2.47.0 (2025-06-07)
+-------------------
+
+2.46.0 (2025-05-17)
+-------------------
+
 2.45.0 (2025-04-27)
 -------------------
 
